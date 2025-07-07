@@ -3,7 +3,7 @@ import './App.css';
 
 const historyContent = (
   <div className="about-content">
-    <h2>Về lịch sử hình thành và phát triển</h2>
+    <h2>Về lịch sử hình thành và phát trsiển</h2>
     <p>Công ty TNHH Thương mại Dịch vụ Sinh Toàn được thành lập vào ngày 24 tháng 11 năm 2011, với sứ mệnh cung cấp các sản phẩm y tế chất lượng cao nhằm nâng cao sức khỏe cộng đồng. Ngay từ những ngày đầu, công ty đã tập trung vào việc xây dựng mối quan hệ bền vững với các nhà sản xuất uy tín.</p>
     <p>Quá trình phát triển của công ty diễn ra mạnh mẽ với việc mở rộng danh mục sản phẩm, bao gồm thiết bị y tế, dụng cụ y tế và các sản phẩm chăm sóc sức khỏe. Nhờ vào đội ngũ nhân viên chuyên nghiệp và tâm huyết, Sinh Toàn đã nhanh chóng khẳng định được vị thế trên thị trường, trở thành đối tác tin cậy của nhiều cơ sở y tế và bệnh viện.</p>
     <p>Hơn nữa, công ty không ngừng đổi mới và ứng dụng công nghệ vào quy trình kinh doanh, giúp tối ưu hóa dịch vụ và nâng cao trải nghiệm khách hàng. Với những nỗ lực không ngừng nghỉ, Công ty TNHH Thương mại Dịch vụ Sinh Toàn đã gặt hái được nhiều thành công và hiện đang tiếp tục mở rộng tầm ảnh hưởng trong lĩnh vực y tế.</p>
