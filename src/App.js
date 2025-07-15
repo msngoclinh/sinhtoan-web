@@ -17,7 +17,9 @@ const historyContent = (
 const partnerContent = (
   <div className="about-content">
     <h2>Về đối tác</h2>
-    <p>Đang cập nhật...</p>
+    <p>Sinh Toàn tự hào hợp tác với hai đối tác lớn trong ngành y tế là Johnson & Johnson và Janssen. Johnson & Johnson, với hơn 130 năm kinh nghiệm, là một trong những tập đoàn hàng đầu thế giới trong lĩnh vực sản xuất sản phẩm chăm sóc sức khỏe và thiết bị y tế.</p>
+    <p>Cùng với đó, Janssen, thành viên của Johnson & Johnson, chuyên phát triển các giải pháp y tế sáng tạo, từ dược phẩm đến các liệu pháp điều trị tiên tiến.</p>
+    <p>Sự hợp tác này không chỉ giúp Sinh Toàn cung cấp các sản phẩm chất lượng cao mà còn nâng cao khả năng phục vụ và đáp ứng nhu cầu của cộng đồng.</p>
   </div>
 );
 
