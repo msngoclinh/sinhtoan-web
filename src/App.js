@@ -32,7 +32,7 @@ function HomePage() {
         <div className="container header-top">
           <div className="logo">SINH TOÀN</div>
           <div className="search-bar">
-            <input type="text" placeholder="Nhập tên sản phẩm" />
+            <input type="text" placeholder="Tìm kiếm..." />
             <button type="submit">🔍</button>
           </div>
         </div>
