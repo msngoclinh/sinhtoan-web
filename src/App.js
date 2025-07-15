@@ -39,6 +39,7 @@ function HomePage() {
         <nav className="main-nav">
           <div className="container">
             <ul>
+              <li><a href="#trangchu">Trang chủ</a></li>
               <li className="dropdown">
                 <a href="#gioithieu">Giới thiệu ▾</a>
                 <ul className="dropdown-menu">
