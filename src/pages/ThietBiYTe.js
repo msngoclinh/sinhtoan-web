@@ -60,6 +60,7 @@ function ThietBiYTe() {
             <div className="product-item">
               <h3>Dụng cụ y tế cơ bản</h3>
               <p>Ống nghe, kính soi tai mũi họng, đèn pin y tế</p>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeEldc0ptD8t-ZkOzbzGdr9wMOs6sytJikBg&s" alt="Vật dụng y tế gia đình" />
             </div>
             <div className="product-item">
               <h3>Vật tư tiêu hao</h3>
