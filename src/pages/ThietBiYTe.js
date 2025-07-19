@@ -50,6 +50,13 @@ function ThietBiYTe() {
               <h3>Thiết bị đo lường</h3>
               <p>Máy đo huyết áp, nhiệt kế, máy đo đường huyết</p>
             </div>
+            <div className="product-item1"></div>
+            <h3>Thiết bị đo lường</h3>
+            <p>Máy đo huyết áp, nhiệt kế, máy đo đường huyết</p>
+
+            <img src="https://kiemdinhyte.vn/upload/images/2024_17_01_14_25_11-Fb-ult800_02a_c.png" alt="Máy đo huyết áp" />
+
+
             <div className="product-item">
               <h3>Dụng cụ y tế cơ bản</h3>
               <p>Ống nghe, kính soi tai mũi họng, đèn pin y tế</p>
