@@ -817,6 +817,210 @@ body {
   text-align: center;
 }
 
+/* Banner with Image */
+.banner {
+  background: #dbead5;
+  color: #3e5641;
+  padding: 3rem;
+  margin: 2rem 0;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.banner-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.banner-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.banner-text p {
+  font-size: 1.2rem;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.banner-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-placeholder {
+  background: #f0f5ef;
+  border: 2px dashed #3e5641;
+  border-radius: 8px;
+  padding: 3rem 2rem;
+  text-align: center;
+  color: #557958;
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-placeholder p {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Main Sections */
+.main-sections {
+  margin: 4rem 0;
+}
+
+.section-title {
+  text-align: center;
+  color: #3e5641;
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+.sections-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.main-section-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(62, 86, 65, 0.08);
+  padding: 2.5rem;
+  border: 1px solid #e0e8de;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-section-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(62, 86, 65, 0.15);
+  border-color: #dbead5;
+}
+
+.main-section-card:nth-child(3) {
+  grid-column: 1 / -1;
+}
+
+.section-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.section-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.main-section-card h3 {
+  color: #3e5641;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.main-section-card p {
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.read-more {
+  color: #557958;
+  font-weight: 600;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.main-section-card:hover .read-more {
+  color: #3e5641;
+}
+
+/* Products Section Special Styling */
+.products-section {
+  background: linear-gradient(135deg, #f8faf7 0%, #fff 100%);
+}
+
+.section-header {
+  margin-bottom: 2rem;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.product-mini-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #e0e8de;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(62, 86, 65, 0.04);
+}
+
+.product-mini-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(62, 86, 65, 0.12);
+  border-color: #dbead5;
+}
+
+.mini-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.product-mini-card h4 {
+  color: #3e5641;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.product-mini-card p {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.view-all-products {
+  display: inline-block;
+  background: #3e5641;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-align: center;
+  width: 100%;
+}
+
+.view-all-products:hover {
+  background: #557958;
+  transform: translateY(-2px);
+}
+
 /* Active Navigation State */
 .main-nav .active a {
   color: #557958;
@@ -907,5 +1111,23 @@ body {
   .footer-content {
     grid-template-columns: 1fr;
     text-align: center;
+  }
+  
+  /* Overview section responsive */
+  .overview-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  .overview-item {
+    padding: 1.5rem 1rem;
+  }
+  
+  .overview-icon {
+    font-size: 2.5rem;
+  }
+  
+  .section-title {
+    font-size: 1.6rem;
   }
 }

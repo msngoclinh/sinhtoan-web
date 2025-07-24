@@ -99,9 +99,12 @@ function VanPhongPham() {
             </div>
             <div className="footer-section">
               <h4>Liên hệ</h4>
-              <p>📞 Hotline: 0123 456 789</p>
-              <p>📧 Email: info@sinhtoan.vn</p>
-              <p>📍 Địa chỉ: [Địa chỉ công ty]</p>
+              <p>📞 Hotline: 0908 952 755</p>
+              <p>📧 Email: sinhtoan.coltd@hotmail.com</p>
+              <p>
+                📍 Địa chỉ: Lầu 9, Tòa nhà Viễn Đông, số 14 <br />
+                Phan Tôn, Phường Đa Kao, Q1, Tp.Hồ Chí Minh
+              </p>
             </div>
             <div className="footer-section">
               <h4>Sản phẩm</h4>
@@ -111,9 +114,9 @@ function VanPhongPham() {
             </div>
             <div className="footer-section">
               <h4>Về chúng tôi</h4>
-              <p><Link to="/gioi-thieu">Giới thiệu công ty</Link></p>
-              <p><Link to="/gioi-thieu">Tầm nhìn - Sứ mệnh</Link></p>
-              <p><Link to="/gioi-thieu">Đối tác</Link></p>
+              <p><Link to="/gioi-thieu">Giới thiệu</Link></p>
+              <p><Link to="/lich-su-phat-trien">Lịch sử phát triển</Link></p>
+              <p><Link to="/doi-tac">Đối tác</Link></p>
             </div>
           </div>
           <div className="footer-bottom">

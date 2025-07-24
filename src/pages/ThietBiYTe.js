@@ -110,7 +110,37 @@ function ThietBiYTe() {
 
       <footer className="main-footer">
         <div className="container">
-          <p>&copy; {new Date().getFullYear()} SINH TOÀN. All rights reserved.</p>
+          <div className="footer-content">
+            <div className="footer-section">
+              <h3>SINH TOÀN</h3>
+              <p>Công ty TNHH Thương mại Dịch vụ Sinh Toàn</p>
+              <p>Chất lượng - Uy tín - Dịch vụ</p>
+            </div>
+            <div className="footer-section">
+              <h4>Liên hệ</h4>
+              <p>📞 Hotline: 0908 952 755</p>
+              <p>📧 Email: sinhtoan.coltd@hotmail.com</p>
+              <p>
+                📍 Địa chỉ: Lầu 9, Tòa nhà Viễn Đông, số 14 <br />
+                Phan Tôn, Phường Đa Kao, Q1, Tp.Hồ Chí Minh
+              </p>
+            </div>
+            <div className="footer-section">
+              <h4>Sản phẩm</h4>
+              <p><Link to="/san-pham/van-phong-pham">Văn phòng phẩm</Link></p>
+              <p><Link to="/san-pham/thiet-bi-y-te">Thiết bị y tế</Link></p>
+              <p><Link to="/san-pham/thoi-trang">Thời trang</Link></p>
+            </div>
+            <div className="footer-section">
+              <h4>Về chúng tôi</h4>
+              <p><Link to="/gioi-thieu">Giới thiệu</Link></p>
+              <p><Link to="/lich-su-phat-trien">Lịch sử phát triển</Link></p>
+              <p><Link to="/doi-tac">Đối tác</Link></p>
+            </div>
+          </div>
+          <div className="footer-bottom">
+            <p>&copy; {new Date().getFullYear()} SINH TOÀN. All rights reserved.</p>
+          </div>
         </div>
       </footer>
     </div>

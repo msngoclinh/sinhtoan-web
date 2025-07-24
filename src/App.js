@@ -1,38 +1,20 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import VanPhongPham from './pages/VanPhongPham';
 import ThietBiYTe from './pages/ThietBiYTe';
 import ThoiTrang from './pages/ThoiTrang';
-import GioiThieu from './pages/GioiThieu';
-import SanPham from './pages/SanPham';
-
-const historyContent = (
-  <div className="about-content">
-    <h2>Lịch sử hình thành và phát triển</h2>
-    <p>Công ty TNHH Thương mại Dịch vụ Sinh Toàn được thành lập vào ngày 24 tháng 11 năm 2011, với sứ mệnh cung cấp các sản phẩm y tế chất lượng cao nhằm nâng cao sức khỏe cộng đồng. Ngay từ những ngày đầu, công ty đã tập trung vào việc xây dựng mối quan hệ bền vững với các nhà sản xuất uy tín.</p>
-    <p>Quá trình phát triển của công ty diễn ra mạnh mẽ với việc mở rộng danh mục sản phẩm, bao gồm thiết bị y tế, dụng cụ y tế và các sản phẩm chăm sóc sức khỏe. Nhờ vào đội ngũ nhân viên chuyên nghiệp và tâm huyết, Sinh Toàn đã nhanh chóng khẳng định được vị thế trên thị trường, trở thành đối tác tin cậy của nhiều cơ sở y tế và bệnh viện.</p>
-    <p>Hơn nữa, công ty không ngừng đổi mới và ứng dụng công nghệ vào quy trình kinh doanh, giúp tối ưu hóa dịch vụ và nâng cao trải nghiệm khách hàng. Với những nỗ lực không ngừng nghỉ, Công ty TNHH Thương mại Dịch vụ Sinh Toàn đã gặt hái được nhiều thành công và hiện đang tiếp tục mở rộng tầm ảnh hưởng trong lĩnh vực y tế.</p>
-  </div>
-);
-
-const partnerContent = (
-  <div className="about-content">
-    <h2>Về đối tác</h2>
-    <p>Sinh Toàn tự hào hợp tác với hai đối tác lớn trong ngành y tế là Johnson & Johnson và Janssen. Johnson & Johnson, với hơn 130 năm kinh nghiệm, là một trong những tập đoàn hàng đầu thế giới trong lĩnh vực sản xuất sản phẩm chăm sóc sức khỏe và thiết bị y tế.</p>
-    <p>Cùng với đó, Janssen, thành viên của Johnson & Johnson, chuyên phát triển các giải pháp y tế sáng tạo, từ dược phẩm đến các liệu pháp điều trị tiên tiến.</p>
-    <p>Sự hợp tác này không chỉ giúp Sinh Toàn cung cấp các sản phẩm chất lượng cao mà còn nâng cao khả năng phục vụ và đáp ứng nhu cầu của cộng đồng.</p>
-  </div>
-);
+import LichSuPhatTrien from './pages/LichSuPhatTrien';
+import DoiTac from './pages/DoiTac';
 
 function HomePage() {
-  const [aboutTab, setAboutTab] = useState('history');
-
   return (
     <div className="App">
       <header className="main-header">
         <div className="container header-top">
-          <div className="logo">SINH TOÀN</div>
+          <div className="logo">
+            <Link to="/">SINH TOÀN</Link>
+          </div>
           <div className="search-bar">
             <input type="text" placeholder="Tìm kiếm..." />
             <button type="submit">🔍</button>
@@ -41,14 +23,12 @@ function HomePage() {
         <nav className="main-nav">
           <div className="container">
             <ul>
+              <li><Link to="/">Trang chủ</Link></li>
               <li className="dropdown">
-                <Link to="/gioi-thieu">Giới thiệu ▾</Link>
+                <span>Giới thiệu ▾</span>
                 <ul className="dropdown-menu">
-                  <li><Link to="/gioi-thieu">Về công ty</Link></li>
-                  <li><Link to="/gioi-thieu">Lịch sử phát triển</Link></li>
-                  <li><Link to="/gioi-thieu">Tầm nhìn - Sứ mệnh</Link></li>
-                  <li><Link to="/gioi-thieu">Đội ngũ</Link></li>
-                  <li><Link to="/gioi-thieu">Đối tác</Link></li>
+                  <li><Link to="/lich-su-phat-trien">Lịch sử phát triển</Link></li>
+                  <li><Link to="/doi-tac">Đối tác</Link></li>
                 </ul>
               </li>
               <li className="dropdown">
@@ -64,38 +44,65 @@ function HomePage() {
           </div>
         </nav>
       </header>
-      
       <main className="container">
         <section className="banner">
-          <h1>Chào mừng đến với SINH TOÀN</h1>
-          <p>Chuyên cung cấp Văn phòng phẩm, Thiết bị y tế, Thời trang chất lượng</p>
-        </section>
-
-        {/* About Section */}
-        <section className="about-section">
-          {aboutTab === 'history' && historyContent}
-          {aboutTab === 'partner' && partnerContent}
-        </section>
-
-        <section className="products" id="sanpham">
-          <div className="product" id="vanphongpham">
-            <h2>Văn phòng phẩm</h2>
-            <p>Đa dạng sản phẩm văn phòng phẩm cho doanh nghiệp và cá nhân.</p>
-            <Link to="/san-pham/van-phong-pham" className="product-link">Xem chi tiết →</Link>
+          <div className="banner-content">
+            <div className="banner-text">
+              <h1>Chào mừng đến với SINH TOÀN</h1>
+              <p>Chuyên cung cấp Văn phòng phẩm, Thiết bị y tế, Thời trang chất lượng</p>
+            </div>
           </div>
-          <div className="product" id="thietbiyte">
-            <h2>Thiết bị y tế</h2>
-            <p>Cung cấp thiết bị y tế đảm bảo chất lượng, an toàn.</p>
-            <Link to="/san-pham/thiet-bi-y-te" className="product-link">Xem chi tiết →</Link>
-          </div>
-          <div className="product" id="thoitrang">
-            <h2>Thời trang</h2>
-            <p>Bộ sưu tập thời trang hiện đại, phong cách.</p>
-            <Link to="/san-pham/thoi-trang" className="product-link">Xem chi tiết →</Link>
+        </section>
+        {/* Main Sections */}
+        <section className="main-sections">
+          <h2 className="section-title">Khám phá SINH TOÀN</h2>
+          <div className="sections-grid">
+            {/* Lịch sử phát triển */}
+            <div className="main-section-card">
+              <Link to="/lich-su-phat-trien" className="section-link">
+                <div className="section-icon">📈</div>
+                <h3>Lịch sử phát triển</h3>
+                <p>Hành trình phát triển từ năm 2011 đến nay với nhiều cột mốc quan trọng, khẳng định vị thế trên thị trường</p>
+                <span className="read-more">Tìm hiểu thêm →</span>
+              </Link>
+            </div>
+            {/* Đối tác */}
+            <div className="main-section-card">
+              <Link to="/doi-tac" className="section-link">
+                <div className="section-icon">🤝</div>
+                <h3>Đối tác</h3>
+                <p>Mạng lưới đối tác uy tín như Johnson & Johnson, Janssen mang đến sản phẩm chất lượng cao</p>
+                <span className="read-more">Xem đối tác →</span>
+              </Link>
+            </div>
+            {/* Sản phẩm */}
+            <div className="main-section-card products-section">
+              <div className="section-header">
+                <div className="section-icon">🛍️</div>
+                <h3>Sản phẩm</h3>
+                <p>Đa dạng các sản phẩm chất lượng cao phục vụ mọi nhu cầu</p>
+              </div>
+              <div className="products-grid">
+                <Link to="/san-pham/thiet-bi-y-te" className="product-mini-card">
+                  <div className="mini-icon">🏥</div>
+                  <h4>Thiết bị y tế</h4>
+                  <p>Thiết bị y tế hiện đại, an toàn</p>
+                </Link>
+                <Link to="/san-pham/van-phong-pham" className="product-mini-card">
+                  <div className="mini-icon">📝</div>
+                  <h4>Văn phòng phẩm</h4>
+                  <p>Đa dạng sản phẩm văn phòng</p>
+                </Link>
+                <Link to="/san-pham/thoi-trang" className="product-mini-card">
+                  <div className="mini-icon">👔</div>
+                  <h4>Thời trang</h4>
+                  <p>Bộ sưu tập hiện đại</p>
+                </Link>
+              </div>
+            </div>
           </div>
         </section>
       </main>
-
       <footer className="main-footer">
         <div className="container">
           <div className="footer-content">
@@ -106,9 +113,12 @@ function HomePage() {
             </div>
             <div className="footer-section">
               <h4>Liên hệ</h4>
-              <p> Hotline: 0123 456 789</p>
-              <p> Email: info@sinhtoan.vn</p>
-              <p> Địa chỉ: [Địa chỉ công ty]</p>
+              <p>📞 Hotline: 0908 952 755</p>
+              <p>📧 Email: sinhtoan.coltd@hotmail.com</p>
+              <p>
+                📍 Địa chỉ: Lầu 9, Tòa nhà Viễn Đông, số 14 <br />
+                Phan Tôn, Phường Đa Kao, Q1, Tp.Hồ Chí Minh
+              </p>
             </div>
             <div className="footer-section">
               <h4>Sản phẩm</h4>
@@ -118,9 +128,8 @@ function HomePage() {
             </div>
             <div className="footer-section">
               <h4>Về chúng tôi</h4>
-              <p><Link to="/gioi-thieu">Giới thiệu công ty</Link></p>
-              <p><Link to="/gioi-thieu">Tầm nhìn - Sứ mệnh</Link></p>
-              <p><Link to="/gioi-thieu">Đối tác</Link></p>
+              <p><Link to="/lich-su-phat-trien">Lịch sử phát triển</Link></p>
+              <p><Link to="/doi-tac">Đối tác</Link></p>
             </div>
           </div>
           <div className="footer-bottom">
@@ -137,8 +146,8 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/gioi-thieu" element={<GioiThieu />} />
-        <Route path="/san-pham" element={<SanPham />} />
+        <Route path="/lich-su-phat-trien" element={<LichSuPhatTrien />} />
+        <Route path="/doi-tac" element={<DoiTac />} />
         <Route path="/san-pham/van-phong-pham" element={<VanPhongPham />} />
         <Route path="/san-pham/thiet-bi-y-te" element={<ThietBiYTe />} />
         <Route path="/san-pham/thoi-trang" element={<ThoiTrang />} />
