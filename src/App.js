@@ -4,6 +4,8 @@ import './App.css';
 import VanPhongPham from './pages/VanPhongPham';
 import ThietBiYTe from './pages/ThietBiYTe';
 import ThoiTrang from './pages/ThoiTrang';
+import GioiThieu from './pages/GioiThieu';
+import SanPham from './pages/SanPham';
 
 const historyContent = (
   <div className="about-content">
@@ -37,15 +39,19 @@ function HomePage() {
         <nav className="main-nav">
           <div className="container">
             <ul>
+              <li><Link to="/">Trang chủ</Link></li>
               <li className="dropdown">
-                <a href="#gioithieu">Giới thiệu ▾</a>
+                <Link to="/gioi-thieu">Giới thiệu ▾</Link>
                 <ul className="dropdown-menu">
-                  <li><a href="#lichsu" onClick={() => setAboutTab('history')}>Về lịch sử hình thành và phát triển</a></li>
-                  <li><a href="#doitac" onClick={() => setAboutTab('partner')}>Về đối tác</a></li>
+                  <li><Link to="/gioi-thieu">Về công ty</Link></li>
+                  <li><Link to="/gioi-thieu">Lịch sử phát triển</Link></li>
+                  <li><Link to="/gioi-thieu">Tầm nhìn - Sứ mệnh</Link></li>
+                  <li><Link to="/gioi-thieu">Đội ngũ</Link></li>
+                  <li><Link to="/gioi-thieu">Đối tác</Link></li>
                 </ul>
               </li>
               <li className="dropdown">
-                <a href="#sanpham">Sản phẩm ▾</a>
+                <Link to="/san-pham">Sản phẩm ▾</Link>
                 <ul className="dropdown-menu">
                   <li><Link to="/san-pham/van-phong-pham">Văn phòng phẩm</Link></li>
                   <li><Link to="/san-pham/thiet-bi-y-te">Thiết bị y tế</Link></li>
@@ -91,7 +97,34 @@ function HomePage() {
 
       <footer className="main-footer">
         <div className="container">
-          <p>&copy; {new Date().getFullYear()} SINH TOÀN. All rights reserved.</p>
+          <div className="footer-content">
+            <div className="footer-section">
+              <h3>SINH TOÀN</h3>
+              <p>Công ty TNHH Thương mại Dịch vụ Sinh Toàn</p>
+              <p>Chất lượng - Uy tín - Dịch vụ</p>
+            </div>
+            <div className="footer-section">
+              <h4>Liên hệ</h4>
+              <p> Hotline: 0123 456 789</p>
+              <p> Email: info@sinhtoan.vn</p>
+              <p> Địa chỉ: [Địa chỉ công ty]</p>
+            </div>
+            <div className="footer-section">
+              <h4>Sản phẩm</h4>
+              <p><Link to="/san-pham/van-phong-pham">Văn phòng phẩm</Link></p>
+              <p><Link to="/san-pham/thiet-bi-y-te">Thiết bị y tế</Link></p>
+              <p><Link to="/san-pham/thoi-trang">Thời trang</Link></p>
+            </div>
+            <div className="footer-section">
+              <h4>Về chúng tôi</h4>
+              <p><Link to="/gioi-thieu">Giới thiệu công ty</Link></p>
+              <p><Link to="/gioi-thieu">Tầm nhìn - Sứ mệnh</Link></p>
+              <p><Link to="/gioi-thieu">Đối tác</Link></p>
+            </div>
+          </div>
+          <div className="footer-bottom">
+            <p>&copy; {new Date().getFullYear()} SINH TOÀN. All rights reserved.</p>
+          </div>
         </div>
       </footer>
     </div>
@@ -103,6 +136,8 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/gioi-thieu" element={<GioiThieu />} />
+        <Route path="/san-pham" element={<SanPham />} />
         <Route path="/san-pham/van-phong-pham" element={<VanPhongPham />} />
         <Route path="/san-pham/thiet-bi-y-te" element={<ThietBiYTe />} />
         <Route path="/san-pham/thoi-trang" element={<ThoiTrang />} />

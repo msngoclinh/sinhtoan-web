@@ -7,7 +7,9 @@ function VanPhongPham() {
     <div className="App">
       <header className="main-header">
         <div className="container header-top">
-          <div className="logo">SINH TOÀN</div>
+          <div className="logo">
+            <Link to="/">SINH TOÀN</Link>
+          </div>
           <div className="search-bar">
             <input type="text" placeholder="Nhập tên sản phẩm" />
             <button type="submit">🔍</button>
@@ -18,21 +20,24 @@ function VanPhongPham() {
             <ul>
               <li><Link to="/">Trang chủ</Link></li>
               <li className="dropdown">
-                <a href="#gioi-thieu">Giới thiệu ▾</a>
+                <Link to="/gioi-thieu">Giới thiệu ▾</Link>
                 <ul className="dropdown-menu">
-                  <li><a href="#lich-su">Về lịch sử hình thành và phát triển</a></li>
-                  <li><a href="#doi-tac">Về đối tác</a></li>
+                  <li><Link to="/gioi-thieu">Về công ty</Link></li>
+                  <li><Link to="/gioi-thieu">Lịch sử phát triển</Link></li>
+                  <li><Link to="/gioi-thieu">Tầm nhìn - Sứ mệnh</Link></li>
+                  <li><Link to="/gioi-thieu">Đội ngũ</Link></li>
+                  <li><Link to="/gioi-thieu">Đối tác</Link></li>
                 </ul>
               </li>
-              <li className="dropdown">
-                <a href="#san-pham">Sản phẩm ▾</a>
+              <li className="dropdown active">
+                <Link to="/san-pham">Sản phẩm ▾</Link>
                 <ul className="dropdown-menu">
                   <li><Link to="/san-pham/van-phong-pham">Văn phòng phẩm</Link></li>
                   <li><Link to="/san-pham/thiet-bi-y-te">Thiết bị y tế</Link></li>
                   <li><Link to="/san-pham/thoi-trang">Thời trang</Link></li>
                 </ul>
               </li>
-              <li><a href="#lien-he">Liên hệ</a></li>
+              <li><a href="#lienhe">Liên hệ</a></li>
             </ul>
           </div>
         </nav>
@@ -86,7 +91,34 @@ function VanPhongPham() {
 
       <footer className="main-footer">
         <div className="container">
-          <p>&copy; {new Date().getFullYear()} SINH TOÀN. All rights reserved.</p>
+          <div className="footer-content">
+            <div className="footer-section">
+              <h3>SINH TOÀN</h3>
+              <p>Công ty TNHH Thương mại Dịch vụ Sinh Toàn</p>
+              <p>Chất lượng - Uy tín - Dịch vụ</p>
+            </div>
+            <div className="footer-section">
+              <h4>Liên hệ</h4>
+              <p>📞 Hotline: 0123 456 789</p>
+              <p>📧 Email: info@sinhtoan.vn</p>
+              <p>📍 Địa chỉ: [Địa chỉ công ty]</p>
+            </div>
+            <div className="footer-section">
+              <h4>Sản phẩm</h4>
+              <p><Link to="/san-pham/van-phong-pham">Văn phòng phẩm</Link></p>
+              <p><Link to="/san-pham/thiet-bi-y-te">Thiết bị y tế</Link></p>
+              <p><Link to="/san-pham/thoi-trang">Thời trang</Link></p>
+            </div>
+            <div className="footer-section">
+              <h4>Về chúng tôi</h4>
+              <p><Link to="/gioi-thieu">Giới thiệu công ty</Link></p>
+              <p><Link to="/gioi-thieu">Tầm nhìn - Sứ mệnh</Link></p>
+              <p><Link to="/gioi-thieu">Đối tác</Link></p>
+            </div>
+          </div>
+          <div className="footer-bottom">
+            <p>&copy; {new Date().getFullYear()} SINH TOÀN. All rights reserved.</p>
+          </div>
         </div>
       </footer>
     </div>

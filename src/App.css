@@ -43,7 +43,7 @@ body {
 
 .search-bar {
   display: flex;
-  width: 50%;
+  width: 50%; 
   max-width: 400px;
   border: 1px solid #dbead5;
   border-radius: 8px;
@@ -430,6 +430,399 @@ body {
   color: #3e5641;
 }
 
+/* Introduction Page Styles */
+.page-subtitle {
+  font-size: 1.1rem;
+  color: #557958;
+  margin: 0;
+  font-weight: 500;
+}
+
+.intro-tabs {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(62, 86, 65, 0.06);
+  margin: 2rem 0;
+  border: 1px solid #e0e8de;
+  overflow: hidden;
+}
+
+.tab-buttons {
+  display: flex;
+  background: #f8faf7;
+  border-bottom: 1px solid #e0e8de;
+  overflow-x: auto;
+}
+
+.tab-buttons button {
+  background: none;
+  border: none;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #3e5641;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.tab-buttons button:hover {
+  background: #f0f5ef;
+  color: #557958;
+}
+
+.tab-buttons button.active {
+  background: #fff;
+  color: #3e5641;
+  border-bottom-color: #3e5641;
+  font-weight: 600;
+}
+
+.tab-content {
+  padding: 2rem;
+}
+
+/* Content Grid */
+.content-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  margin: 1.5rem 0;
+}
+
+.content-text {
+  line-height: 1.7;
+}
+
+.content-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholder-image {
+  background: #f0f5ef;
+  border: 2px dashed #dbead5;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  color: #557958;
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Company Stats */
+.company-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 1.5rem;
+  background: #f8faf7;
+  border-radius: 8px;
+  border: 1px solid #e0e8de;
+}
+
+.stat-item h3 {
+  font-size: 2.5rem;
+  color: #3e5641;
+  margin: 0 0 0.5rem 0;
+  font-weight: 700;
+}
+
+.stat-item p {
+  color: #557958;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 1rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #dbead5;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -0.5rem;
+  top: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  background: #3e5641;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 3px #dbead5;
+}
+
+.timeline-year {
+  position: absolute;
+  left: -4rem;
+  top: 0;
+  font-weight: 700;
+  color: #3e5641;
+  font-size: 1.1rem;
+}
+
+.timeline-content h3 {
+  color: #3e5641;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.timeline-content p {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Vision Mission */
+.vision-mission {
+  display: grid;
+  gap: 2rem;
+}
+
+.vision-item {
+  background: #f8faf7;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid #e0e8de;
+}
+
+.vision-item h3 {
+  color: #3e5641;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.vision-item p {
+  color: #666;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.vision-item ul {
+  margin: 1rem 0 0 0;
+  padding-left: 1.5rem;
+}
+
+.vision-item li {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.vision-item li strong {
+  color: #3e5641;
+}
+
+/* Team Grid */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.team-department {
+  background: #f8faf7;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #e0e8de;
+  text-align: center;
+}
+
+.team-department h3 {
+  color: #3e5641;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.team-department p {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.team-values {
+  background: #f0f5ef;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+  border-left: 4px solid #3e5641;
+}
+
+.team-values h3 {
+  color: #3e5641;
+  margin-bottom: 1rem;
+}
+
+.team-values p {
+  color: #666;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Partners Section */
+.partners-section {
+  margin: 2rem 0;
+}
+
+.partners-section h3 {
+  color: #3e5641;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 1rem 0;
+}
+
+.partner-item {
+  background: #f8faf7;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #e0e8de;
+  text-align: center;
+}
+
+.partner-logo {
+  background: #e0e8de;
+  height: 80px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  color: #557958;
+  font-weight: 500;
+}
+
+.partner-item p {
+  color: #666;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.customer-list {
+  background: #f8faf7;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #e0e8de;
+  margin: 1rem 0;
+}
+
+.customer-list li {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.partnership-benefits {
+  margin: 2rem 0;
+}
+
+.partnership-benefits h3 {
+  color: #3e5641;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.benefit-item {
+  background: #f8faf7;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #e0e8de;
+}
+
+.benefit-item h4 {
+  color: #3e5641;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.benefit-item p {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Footer Enhancements */
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: #dbead5;
+  margin-bottom: 1rem;
+}
+
+.footer-section p {
+  color: #a8c4ab;
+  line-height: 1.6;
+  margin: 0.5rem 0;
+}
+
+.footer-section a {
+  color: #a8c4ab;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-section a:hover {
+  color: #dbead5;
+}
+
+.footer-bottom {
+  border-top: 1px solid #557958;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+/* Active Navigation State */
+.main-nav .active a {
+  color: #557958;
+  font-weight: 700;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .products {
@@ -469,5 +862,50 @@ body {
   
   .page-header h1 {
     font-size: 1.8rem;
+  }
+  
+  /* Introduction page responsive */
+  .tab-buttons {
+    flex-wrap: wrap;
+  }
+  
+  .tab-buttons button {
+    flex: 1;
+    min-width: 120px;
+  }
+  
+  .content-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .company-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .timeline {
+    padding-left: 1rem;
+  }
+  
+  .timeline-year {
+    position: static;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .timeline-item {
+    padding-left: 1rem;
+  }
+  
+  .team-grid,
+  .partners-grid,
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
   }
 }

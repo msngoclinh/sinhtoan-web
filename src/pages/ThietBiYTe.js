@@ -7,37 +7,43 @@ function ThietBiYTe() {
     <div className="App">
       <header className="main-header">
         <div className="container header-top">
-          <div className="logo">SINH TOÀN</div>
+          <div className="logo">
+            <Link to="/">SINH TOÀN</Link>
+          </div>
           <div className="search-bar">
             <input type="text" placeholder="Nhập tên sản phẩm" />
             <button type="submit">🔍</button>
           </div>
         </div>
+
         <nav className="main-nav">
           <div className="container">
             <ul>
               <li><Link to="/">Trang chủ</Link></li>
               <li className="dropdown">
-                <a href="#gioi-thieu">Giới thiệu ▾</a>
+                <Link to="/gioi-thieu">Giới thiệu ▾</Link>
                 <ul className="dropdown-menu">
-                  <li><a href="#lich-su">Về lịch sử hình thành và phát triển</a></li>
-                  <li><a href="#doi-tac">Về đối tác</a></li>
+                  <li><Link to="/gioi-thieu">Về công ty</Link></li>
+                  <li><Link to="/gioi-thieu">Lịch sử phát triển</Link></li>
+                  <li><Link to="/gioi-thieu">Tầm nhìn - Sứ mệnh</Link></li>
+                  <li><Link to="/gioi-thieu">Đội ngũ</Link></li>
+                  <li><Link to="/gioi-thieu">Đối tác</Link></li>
                 </ul>
               </li>
-              <li className="dropdown">
-                <a href="#san-pham">Sản phẩm ▾</a>
+              <li className="dropdown active">
+                <Link to="/san-pham">Sản phẩm ▾</Link>
                 <ul className="dropdown-menu">
                   <li><Link to="/san-pham/van-phong-pham">Văn phòng phẩm</Link></li>
                   <li><Link to="/san-pham/thiet-bi-y-te">Thiết bị y tế</Link></li>
                   <li><Link to="/san-pham/thoi-trang">Thời trang</Link></li>
                 </ul>
               </li>
-              <li><a href="#lien-he">Liên hệ</a></li>
+              <li><a href="#lienhe">Liên hệ</a></li>
             </ul>
           </div>
         </nav>
       </header>
-      
+
       <main className="container">
         <section className="page-header">
           <h1>Thiết bị y tế</h1>
@@ -95,9 +101,9 @@ function ThietBiYTe() {
           <h2>Liên hệ đặt hàng</h2>
           <p>Để biết thêm thông tin chi tiết về sản phẩm và báo giá, vui lòng liên hệ:</p>
           <div className="contact-details">
-            <p><strong>Điện thoại:</strong> [Số điện thoại]</p>
-            <p><strong>Email:</strong> [Email liên hệ]</p>
-            <p><strong>Địa chỉ:</strong> [Địa chỉ công ty]</p>
+            <p><strong>Điện thoại:</strong> 0908 952 755</p>
+            <p><strong>Email:</strong> sinhtoan.coltd@hotmail.com</p>
+            <p><strong>Địa chỉ:</strong> Lầu 9, Tòa nhà Viễn Đông, số 14 Phan Tôn, P. Đa Kao, Q.1, TP. HCM</p>
           </div>
         </section>
       </main>
