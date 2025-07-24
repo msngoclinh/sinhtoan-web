@@ -107,9 +107,9 @@ function ThoiTrang() {
           <h2>Liên hệ đặt hàng</h2>
           <p>Để biết thêm thông tin chi tiết về sản phẩm và báo giá, vui lòng liên hệ:</p>
           <div className="contact-details">
-            <p><strong>Điện thoại:</strong> [Số điện thoại]</p>
+            <p><strong>Điện thoại:</strong> 0311364218</p>
             <p><strong>Email:</strong> [Email liên hệ]</p>
-            <p><strong>Địa chỉ:</strong> [Địa chỉ công ty]</p>
+            <p><strong>Địa chỉ:</strong> Lầu 9, Tòa nhà Viễn Đông, số 14 Phan Tôn, Phường Sài Gòn, Thành phố Hồ Chí Minh, Việt Nam</p>
           </div>
         </section>
       </main>

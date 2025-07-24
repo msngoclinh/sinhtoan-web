@@ -101,9 +101,9 @@ function ThietBiYTe() {
           <h2>Liên hệ đặt hàng</h2>
           <p>Để biết thêm thông tin chi tiết về sản phẩm và báo giá, vui lòng liên hệ:</p>
           <div className="contact-details">
-            <p><strong>Điện thoại:</strong> 0908 952 755</p>
-            <p><strong>Email:</strong> sinhtoan.coltd@hotmail.com</p>
-            <p><strong>Địa chỉ:</strong> Lầu 9, Tòa nhà Viễn Đông, số 14 Phan Tôn, P. Đa Kao, Q.1, TP. HCM</p>
+            <p><strong>Điện thoại:</strong> [Số điện thoại]</p>
+            <p><strong>Email:</strong> [Email liên hệ]</p>
+            <p><strong>Địa chỉ:</strong> [Địa chỉ công ty]</p>
           </div>
         </section>
       </main>
