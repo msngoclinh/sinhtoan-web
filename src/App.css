@@ -34,11 +34,13 @@ body {
   padding-bottom: 1rem;
 }
 
-.logo {
+.logo, .logo a {
   font-size: 2.5rem;
   font-weight: 900;
-  letter-spacing: 1px;
-  color: #3e5641;
+  letter-spacing: 0.02em;
+  color: #30754c !important;
+  text-decoration: none !important;
+  border-bottom: none !important;
 }
 
 .search-bar {
@@ -1130,4 +1132,58 @@ body {
   .section-title {
     font-size: 1.6rem;
   }
+}
+
+.banner-image-full {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.banner-image-full .banner-text {
+  color: #fff;
+  width: 100%;
+  padding: 2.5rem 2rem 1.5rem 2rem;
+  text-align: center;
+  text-shadow: 0 4px 24px #000, 0 2px 8px #234d20;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.banner-image-full .banner-text h1 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  margin-bottom: 1.2rem;
+  color: #fff;
+  text-shadow: 0 4px 24px #000, 0 2px 8px #234d20;
+}
+.banner-image-full .banner-text p {
+  font-size: 1.3rem;
+  color: #fff;
+  text-shadow: 0 4px 24px #000, 0 2px 8px #234d20;
+}
+@media (max-width: 900px) {
+  .banner-image-full {
+    height: 220px;
+  }
+  .banner-image-full .banner-text {
+    padding: 1.2rem 1rem 0.8rem 1rem;
+    font-size: 1.1rem;
+  }
+  .banner-image-full .banner-text h1 {
+    font-size: 1.3rem;
+  }
+}
+
+@keyframes floatBanner {
+  0% { transform: translateY(0px) scale(1); }
+  50% { transform: translateY(-16px) scale(1.01); }
+  100% { transform: translateY(0px) scale(1); }
+}
+.floating-banner img {
+  animation: floatBanner 6s ease-in-out infinite;
 }

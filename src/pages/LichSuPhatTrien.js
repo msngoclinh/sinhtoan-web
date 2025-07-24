@@ -8,7 +8,7 @@ function LichSuPhatTrien() {
       <header className="main-header">
         <div className="container header-top">
           <div className="logo">
-            <Link to="/">SINH TOÀN</Link>
+            <Link to="/">SINHTOAN</Link>
           </div>
           <div className="search-bar">
             <input type="text" placeholder="Tìm kiếm..." />
