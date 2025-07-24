@@ -40,10 +40,16 @@ function LichSuPhatTrien() {
         </nav>
       </header>
       <main className="container">
-        <div className="page-header">
-          <h1>Lịch sử hình thành và phát triển</h1>
-          <p className="page-subtitle">Hành trình phát triển của SINH TOÀN từ năm 2011</p>
-        </div>
+        <section className="banner" style={{background: '#fff', padding: 0}}>
+          <div className="banner-image-full floating-banner" style={{position: 'relative', width: '100%', aspectRatio: '16/9', borderRadius: '12px', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', alignItems: 'center', background: '#fff', minHeight: '340px', border: '4px solid #27ae60'}}>
+            <img src={process.env.PUBLIC_URL + '/htpt.jpg'} alt="Banner Lịch sử phát triển" style={{width: '100%', height: '100%', maxHeight: '100%', maxWidth: '100%', objectFit: 'contain', objectPosition: 'center', position: 'absolute', left: 0, top: 0, zIndex: 1, animation: 'floatBanner 6s ease-in-out infinite'}} />
+            <div style={{position: 'absolute', left: 0, top: 0, width: '100%', height: '100%', background: 'rgba(0,0,0,0.38)', zIndex: 2}}></div>
+            <div className="banner-text" style={{position: 'relative', zIndex: 3, color: '#fff', width: '100%', padding: '2.5rem 2rem 2.5rem 2rem', textAlign: 'center', fontWeight: 900, letterSpacing: '1px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
+              <h1 style={{fontSize: '2.5rem', fontWeight: 700, marginBottom: '1.2rem', color: '#fff', textShadow: '0 4px 24px #000, 0 2px 8px #234d20', fontFamily: 'Montserrat, Arial, sans-serif'}}>LỊCH SỬ PHÁT TRIỂN</h1>
+              <span style={{fontSize: '1.3rem', fontStyle: 'italic', color: '#fff', textShadow: '0 2px 8px #000', fontFamily: 'Georgia, serif'}}>Hành trình phát triển của SINH TOÀN từ năm 2011</span>
+            </div>
+          </div>
+        </section>
 
         <div className="about-section">
           <div className="about-content">

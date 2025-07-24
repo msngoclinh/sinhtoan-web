@@ -23,11 +23,8 @@ function ThietBiYTe() {
               <li className="dropdown">
                 <Link to="/gioi-thieu">Giới thiệu ▾</Link>
                 <ul className="dropdown-menu">
-                  <li><Link to="/gioi-thieu">Về công ty</Link></li>
-                  <li><Link to="/gioi-thieu">Lịch sử phát triển</Link></li>
-                  <li><Link to="/gioi-thieu">Tầm nhìn - Sứ mệnh</Link></li>
-                  <li><Link to="/gioi-thieu">Đội ngũ</Link></li>
-                  <li><Link to="/gioi-thieu">Đối tác</Link></li>
+                  <li><Link to="/lich-su-phat-trien">Lịch sử phát triển</Link></li>
+                  <li><Link to="/doi-tac">Đối tác</Link></li>
                 </ul>
               </li>
               <li className="dropdown active">
@@ -45,35 +42,52 @@ function ThietBiYTe() {
       </header>
 
       <main className="container">
-        <section className="page-header">
-          <h1>Thiết bị y tế</h1>
-          <p>Cung cấp thiết bị y tế đảm bảo chất lượng, an toàn cho các cơ sở y tế</p>
+        <section className="banner" style={{background: '#fff', padding: 0}}>
+          <div className="banner-image-full floating-banner" style={{position: 'relative', width: '100%', aspectRatio: '16/9', borderRadius: '12px', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', alignItems: 'center', background: '#fff', minHeight: '340px', border: '4px solidrgb(79, 131, 101)'}}>
+            <img src={process.env.PUBLIC_URL + '/tbyt.jpg'} alt="Banner Thiết bị y tế" style={{width: '100%', height: '100%', maxHeight: '100%', maxWidth: '100%', objectFit: 'contain', objectPosition: 'center', position: 'absolute', left: 0, top: 0, zIndex: 1, animation: 'floatBanner 6s ease-in-out infinite'}} />
+            <div style={{position: 'absolute', left: 0, top: 0, width: '100%', height: '100%', background: 'rgba(198, 193, 193, 0.38)', zIndex: 2}}></div>
+            <div className="banner-text" style={{position: 'relative', zIndex: 3, color: '#fff', width: '100%', padding: '2.5rem 2rem 2.5rem 2rem', textAlign: 'center', fontWeight: 900, letterSpacing: '1px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
+              <h1 style={{fontSize: '2.5rem', fontWeight: 700, marginBottom: '1.2rem', color: '#fff', textShadow: '0 4px 24px #000, 0 2px 8px #234d20', fontFamily: 'Montserrat, Arial, sans-serif'}}>THIẾT BỊ Y TẾ</h1>
+            </div>
+          </div>
         </section>
 
         <section className="product-details">
           <div className="product-grid">
             <div className="product-item">
+              <img src={process.env.PUBLIC_URL + '/tbdl.jpg'} alt="Thiết bị đo lường" style={{width: '100%', maxWidth: '220px', borderRadius: '8px', margin: '0.5rem auto 1rem', display: 'block', boxShadow: '0 2px 12px rgba(62,86,65,0.10)'}} />
               <h3>Thiết bị đo lường</h3>
               <p>Máy đo huyết áp, nhiệt kế, máy đo đường huyết</p>
             </div>
             <div className="product-item">
+             
+              <img src={process.env.PUBLIC_URL + '/on.png'} alt="Dụng cụ y tế cơ bản" style={{width: '100%', maxWidth: '220px', borderRadius: '8px', margin: '0.5rem auto 1rem', display: 'block', boxShadow: '0 2px 12px rgba(62,86,65,0.10)'}} />
               <h3>Dụng cụ y tế cơ bản</h3>
+              
               <p>Ống nghe, kính soi tai mũi họng, đèn pin y tế</p>
             </div>
             <div className="product-item">
+              <img src={process.env.PUBLIC_URL + '/bong.jpg'} alt="Vật tư tiêu hao" style={{width: '100%', maxWidth: '220px', borderRadius: '8px', margin: '0.5rem auto 1rem', display: 'block', boxShadow: '0 2px 12px rgba(62,86,65,0.10)'}} />
               <h3>Vật tư tiêu hao</h3>
+
               <p>Băng gạc, bông y tế, kim tiêm, ống nghiệm</p>
             </div>
             <div className="product-item">
+              <img src={process.env.PUBLIC_URL + '/hj.jpg'} alt="Thiết bị bảo hộ" style={{width: '100%', maxWidth: '220px', borderRadius: '8px', margin: '0.5rem auto 1rem', display: 'block', boxShadow: '0 2px 12px rgba(62,86,65,0.10)'}} />
               <h3>Thiết bị bảo hộ</h3>
+
               <p>Khẩu trang y tế, găng tay, áo blouse, kính bảo hộ</p>
             </div>
             <div className="product-item">
+              <img src={process.env.PUBLIC_URL + '/ha.jpg'} alt="Máy móc chuyên dụng" style={{width: '100%', maxWidth: '220px', borderRadius: '8px', margin: '0.5rem auto 1rem', display: 'block', boxShadow: '0 2px 12px rgba(62,86,65,0.10)'}} />
               <h3>Máy móc chuyên dụng</h3>
+
               <p>Máy siêu âm, máy X-quang, máy xét nghiệm</p>
             </div>
             <div className="product-item">
+              <img src={process.env.PUBLIC_URL + '/haa.png'} alt="Dụng cụ phẫu thuật" style={{width: '100%', maxWidth: '220px', borderRadius: '8px', margin: '0.5rem auto 1rem', display: 'block', boxShadow: '0 2px 12px rgba(62,86,65,0.10)'}} />
               <h3>Dụng cụ phẫu thuật</h3>
+
               <p>Dao mổ, kéo y tế, kẹp y tế, dụng cụ nội soi</p>
             </div>
           </div>

@@ -40,10 +40,15 @@ function DoiTac() {
         </nav>
       </header>
       <main className="container">
-        <div className="page-header">
-          <h1>Đối tác của SINH TOÀN</h1>
-          <p className="page-subtitle">Mạng lưới đối tác uy tín và đáng tin cậy</p>
-        </div>
+        <section className="banner" style={{background: '#fff', padding: 0}}>
+          <div className="banner-image-full floating-banner" style={{position: 'relative', width: '100%', aspectRatio: '16/9', borderRadius: '12px', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', alignItems: 'center', background: '#fff', minHeight: '340px', border: '4px solidrgb(128, 195, 156)'}}>
+            <img src={process.env.PUBLIC_URL + '/dtt.jpg'} alt="Banner Đối tác" style={{width: '100%', height: '100%', maxHeight: '100%', maxWidth: '100%', objectFit: 'contain', objectPosition: 'center', position: 'absolute', left: 0, top: 0, zIndex: 1, animation: 'floatBanner 6s ease-in-out infinite'}} />
+            <div style={{position: 'absolute', left: 0, top: 0, width: '100%', height: '100%', background: 'rgba(0,0,0,0.38)', zIndex: 2}}></div>
+            <div className="banner-text" style={{position: 'relative', zIndex: 3, color: '#fff', width: '100%', padding: '2.5rem 2rem 2.5rem 2rem', textAlign: 'center', fontWeight: 900, letterSpacing: '1px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
+              <h1 style={{fontSize: '2.5rem', fontWeight: 700, marginBottom: '1.2rem', color: '#fff', textShadow: '0 4px 24px #000, 0 2px 8px #234d20', fontFamily: 'Montserrat, Arial, sans-serif'}}>ĐỐI TÁC</h1>
+            </div>
+          </div>
+        </section>
 
         <div className="about-section">
           <div className="about-content">
@@ -58,11 +63,11 @@ function DoiTac() {
           <h3>Đối tác chính</h3>
           <div className="partners-grid">
             <div className="partner-item">
-              <div className="partner-logo">Johnson & Johnson</div>
+              <img src={process.env.PUBLIC_URL + '/js.jpg'} alt="Johnson & Johnson" style={{width: '100%', maxWidth: '220px', aspectRatio: '16/9', borderRadius: '12px', margin: '0.2rem auto 0.7rem', display: 'block', boxShadow: '0 2px 12px rgba(62,86,65,0.10)', objectFit: 'cover'}} />
               <p>Tập đoàn y tế hàng đầu thế giới với hơn 130 năm kinh nghiệm trong lĩnh vực chăm sóc sức khỏe</p>
             </div>
             <div className="partner-item">
-              <div className="partner-logo">Janssen</div>
+              <img src={process.env.PUBLIC_URL + '/ja.png'} alt="Janssen" style={{width: '100%', maxWidth: '220px', aspectRatio: '16/9', borderRadius: '12px', margin: '0.2rem auto 0.7rem', display: 'block', boxShadow: '0 2px 12px rgba(62,86,65,0.10)', objectFit: 'cover'}} />
               <p>Công ty dược phẩm thuộc Johnson & Johnson, chuyên phát triển các giải pháp y tế tiên tiến</p>
             </div>
           </div>

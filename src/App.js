@@ -46,7 +46,7 @@ function HomePage() {
       </header>
       <main className="container">
         <section className="banner" style={{background: '#fff', padding: 0}}>
-          <div className="banner-image-full floating-banner" style={{position: 'relative', width: '100%', aspectRatio: '16/9', borderRadius: '12px', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', alignItems: 'center', background: '#fff', minHeight: '340px', border: '4px solid #27ae60'}}>
+          <div className="banner-image-full floating-banner" style={{position: 'relative', width: '100%', aspectRatio: '16/9', borderRadius: '12px', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', alignItems: 'center', background: '#fff', minHeight: '340px', border: '4px solidrgb(81, 187, 125)'}}>
             <img src={process.env.PUBLIC_URL + '/bannerr.png'} alt="Banner sản phẩm SINH TOÀN" style={{width: '100%', height: '100%', maxHeight: '100%', maxWidth: '100%', objectFit: 'contain', objectPosition: 'center', position: 'absolute', left: 0, top: 0, zIndex: 1, animation: 'floatBanner 6s ease-in-out infinite'}} />
             <div style={{position: 'absolute', left: 0, top: 0, width: '100%', height: '100%', background: 'rgba(0,0,0,0.38)', zIndex: 2}}></div>
             <div className="banner-text" style={{position: 'relative', zIndex: 3, color: '#fff', width: '100%', padding: '2.5rem 2rem 2.5rem 2rem', textAlign: 'center', fontWeight: 900, letterSpacing: '1px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
@@ -58,12 +58,12 @@ function HomePage() {
         </section>
         {/* Main Sections */}
         <section className="main-sections">
-          <h2 className="section-title">Khám phá SINH TOÀN</h2>
+          <h2 className="section-title">KHÁM PHÁ SINH TOÀN</h2>
           <div className="sections-grid">
             {/* Lịch sử phát triển */}
             <div className="main-section-card">
               <Link to="/lich-su-phat-trien" className="section-link">
-                <div className="section-icon">📈</div>
+                <img src={process.env.PUBLIC_URL + '/lsss.jpg'} alt="Lịch sử phát triển" className="section-img" style={{width: '100%', maxWidth: '320px', borderRadius: '8px', margin: '0.5rem auto 1rem', display: 'block', boxShadow: '0 2px 12px rgba(62,86,65,0.10)'}} />
                 <h3>Lịch sử phát triển</h3>
                 <p>Hành trình phát triển từ năm 2011 đến nay với nhiều cột mốc quan trọng, khẳng định vị thế trên thị trường</p>
                 <span className="read-more">Tìm hiểu thêm →</span>
@@ -72,7 +72,7 @@ function HomePage() {
             {/* Đối tác */}
             <div className="main-section-card">
               <Link to="/doi-tac" className="section-link">
-                <div className="section-icon">🤝</div>
+                <img src={process.env.PUBLIC_URL + '/dt.jpg'} alt="Đối tác" className="section-img" style={{width: '100%', maxWidth: '320px', borderRadius: '8px', margin: '0.5rem auto 1rem', display: 'block', boxShadow: '0 2px 12px rgba(62,86,65,0.10)'}} />
                 <h3>Đối tác</h3>
                 <p>Mạng lưới đối tác uy tín như Johnson & Johnson, Janssen mang đến sản phẩm chất lượng cao</p>
                 <span className="read-more">Xem đối tác →</span>
@@ -81,7 +81,7 @@ function HomePage() {
             {/* Sản phẩm */}
             <div className="main-section-card products-section">
               <div className="section-header">
-                <div className="section-icon">🛍️</div>
+                <img src={process.env.PUBLIC_URL + '/sp.jpg'} alt="Sản phẩm" className="section-img" style={{width: '100%', maxWidth: '480px', aspectRatio: '16/9', borderRadius: '12px', margin: '0.2rem auto 0.7rem', display: 'block', boxShadow: '0 2px 12px rgba(62,86,65,0.10)', objectFit: 'cover'}} />
                 <h3>Sản phẩm</h3>
                 <p>Đa dạng các sản phẩm chất lượng cao phục vụ mọi nhu cầu</p>
               </div>
