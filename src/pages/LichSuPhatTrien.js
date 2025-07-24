@@ -121,7 +121,7 @@ function LichSuPhatTrien() {
               </p>
             </div>
             <div className="footer-section">
-              <h4>Sản phẩmádasdasd</h4>
+              <h4>Sản phẩm</h4>
               <p><Link to="/san-pham/van-phong-pham">Văn phòng phẩm</Link></p>
               <p><Link to="/san-pham/thiet-bi-y-te">Thiết bị y tế</Link></p>
               <p><Link to="/san-pham/thoi-trang">Thời trang</Link></p>
