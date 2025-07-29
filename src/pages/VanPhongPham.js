@@ -22,10 +22,7 @@ function VanPhongPham() {
               <li className="dropdown">
                 <Link to="/gioi-thieu">Giới thiệu ▾</Link>
                 <ul className="dropdown-menu">
-                  <li><Link to="/gioi-thieu">Về công ty</Link></li>
                   <li><Link to="/gioi-thieu">Lịch sử phát triển</Link></li>
-                  <li><Link to="/gioi-thieu">Tầm nhìn - Sứ mệnh</Link></li>
-                  <li><Link to="/gioi-thieu">Đội ngũ</Link></li>
                   <li><Link to="/gioi-thieu">Đối tác</Link></li>
                 </ul>
               </li>
